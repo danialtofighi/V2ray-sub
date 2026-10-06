@@ -1,0 +1,92 @@
+{
+  "remarks": "danial",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.75.193",
+            "port": 443,
+            "users": [
+              {
+                "id": "ea58684d-a6e0-4947-8954-8835516db533",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "d.danialshakib.ir",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "echConfigList": "AEX+DQBBHwAgACB+MkwD+NmauSe6vhs63AhQMeGmgNqu1mzL5vYZvT0uRQAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA="
+        },
+        "xhttpSettings": {
+          "host": "d.danialshakib.ir",
+          "path": "/assets/css/v4/main",
+          "mode": "packet-up"
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "network": "tcp,udp"
+      }
+    ]
+  }
+}
