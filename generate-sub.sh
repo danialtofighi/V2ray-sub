@@ -3,7 +3,7 @@
 OUT="/tmp/V2ray-sub/sub"
 TMP="/tmp/V2ray-sub/sub.tmp"
 
-IP="172.67.180.227"
+IP="104.21.75.193"
 DOMAIN="d.danialshakib.ir"
 PORT="443"
 PATH_X="/assets/css/v4/main"
