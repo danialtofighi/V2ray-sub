@@ -1,5 +1,5 @@
-vless://ea58684d-a6e0-4947-8954-8835516db533@d.danialshakib.ir:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#danial
-vless://28f14230-41bf-4b0b-ad02-03fa3c884981@d.danialshakib.ir:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#danesh
-vless://b9fc1dc8-db21-4d85-a264-55600ed80841@d.danialshakib.ir:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#neda
-vless://157cc75a-7aa4-42e3-b03c-e99364ae2ee7@d.danialshakib.ir:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#mohsen
-vless://6445f91f-b618-422e-b8ca-dad0bbddf56f@d.danialshakib.ir:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#maede
+vless://ea58684d-a6e0-4947-8954-8835516db533@104.21.75.193:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#danial
+vless://28f14230-41bf-4b0b-ad02-03fa3c884981@104.21.75.193:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#danesh
+vless://b9fc1dc8-db21-4d85-a264-55600ed80841@104.21.75.193:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#neda
+vless://157cc75a-7aa4-42e3-b03c-e99364ae2ee7@104.21.75.193:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#mohsen
+vless://6445f91f-b618-422e-b8ca-dad0bbddf56f@104.21.75.193:443?encryption=none&security=tls&type=xhttp&host=d.danialshakib.ir&path=/assets/css/v4/main&sni=d.danialshakib.ir&alpn=h2&fp=chrome#maede

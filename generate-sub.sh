@@ -2,17 +2,20 @@
 
 OUT="/tmp/V2ray-sub/sub.txt"
 
-SERVER="d.danialshakib.ir"
+IP="104.21.75.193"
+DOMAIN="d.danialshakib.ir"
 PORT="443"
 PATH_X="/assets/css/v4/main"
 
 rm -f "$OUT"
 
 add_user () {
+
 UUID=$1
 NAME=$2
 
-echo "vless://$UUID@$SERVER:$PORT?encryption=none&security=tls&type=xhttp&host=$SERVER&path=$PATH_X&sni=$SERVER&alpn=h2&fp=chrome#$NAME" >> "$OUT"
+echo "vless://$UUID@$IP:$PORT?encryption=none&security=tls&type=xhttp&host=$DOMAIN&path=$PATH_X&sni=$DOMAIN&alpn=h2&fp=chrome#$NAME" >> "$OUT"
+
 }
 
 add_user "ea58684d-a6e0-4947-8954-8835516db533" "danial"
