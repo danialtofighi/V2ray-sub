@@ -3,12 +3,15 @@
 OUT="/tmp/V2ray-sub/sub"
 TMP="/tmp/V2ray-sub/sub.tmp"
 
-IP="104.21.75.193"
+IP=$(dig d.danialshakib.ir A +short | head -1)
 DOMAIN="d.danialshakib.ir"
 PORT="443"
 PATH_X="/assets/css/v4/main"
 
 ECH=$(grep 'echConfigList' /tmp/V2ray-sub/config.json | sed 's/.*echConfigList": "\(.*\)".*/\1/')
+
+# URL encode ECH
+ECH_ENCODED=$(python3 -c "import urllib.parse; print(urllib.parse.quote('''$ECH'''))")
 
 rm -f "$TMP"
 
@@ -17,7 +20,7 @@ add_user () {
 UUID=$1
 NAME=$2
 
-echo "vless://$UUID@$IP:$PORT?encryption=none&security=tls&type=xhttp&host=$DOMAIN&path=$PATH_X&sni=$DOMAIN&alpn=h2&fp=chrome&echConfigList=$ECH#$NAME" >> "$TMP"
+echo "vless://$UUID@$IP:$PORT?encryption=none&security=tls&type=xhttp&host=$DOMAIN&path=$PATH_X&sni=$DOMAIN&alpn=h2&fp=chrome&echConfigList=$ECH_ENCODED#$NAME" >> "$TMP"
 
 }
 
